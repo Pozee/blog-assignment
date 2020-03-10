@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    width: 100vw;
+}
+.nav-item {
+    padding: 0.7em;
+    color: white;
+}
+.nav-item:hover {
+    color: red;
+    cursor: pointer;
+}
+nav-btn {
+    
+}

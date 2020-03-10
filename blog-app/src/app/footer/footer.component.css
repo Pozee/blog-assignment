@@ -1,0 +1,13 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    bottom: 0;
+    justify-content:center ;
+}
+.footer-container p {
+    color: white;
+}

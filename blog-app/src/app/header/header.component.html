@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="nav-item">Startsida</div>
+    <div class="nav-item">Senaste</div>
+    <div class="nav-item">Alla</div>
+    <div class="nav-item" *ngIf="isAuthenticated">Ny artikel</div>
+    <div class="nav-item"><button class="nav-btn" (click)="getAuthenticated()">Logga in</button></div>
+</div>
