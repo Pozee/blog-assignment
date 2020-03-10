@@ -1,17 +1,27 @@
 .container {
     display: flex;
-    flex-direction: row;
     background-color: #333;
     width: 100vw;
+    justify-content: space-between;
 }
-.nav-item {
-    padding: 0.7em;
+
+div ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div ul li {
+    display: inline-block;
+    padding: 0.5em;
     color: white;
 }
-.nav-item:hover {
-    color: red;
+div ul li:hover {
+    background-color: rgb(77, 77, 77);
     cursor: pointer;
 }
-nav-btn {
-    
+
+.btn-login {
+   margin-right: 2em;
+   height: 1.5em;
+   align-self: center;
 }
