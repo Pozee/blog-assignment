@@ -25,3 +25,6 @@ div ul li:hover {
    height: 1.5em;
    align-self: center;
 }
+.is-active {
+    background-color: rgb(77, 77, 77)
+}

@@ -1,16 +1,10 @@
-<!-- <div class="container">
-    <div class="nav-item">Startsida</div>
-    <div class="nav-item">Senaste</div>
-    <div class="nav-item">Alla</div>
-    <div class="nav-item" *ngIf="isAuthenticated">Ny artikel</div>
-    <div class="nav-item"><button class="nav-btn" (click)="getAuthenticated()">Logga in</button></div>
-</div> -->
+
  <div class="container">
      <ul>
-         <li>Startsida</li>
-         <li>Senaste</li>
-         <li>Alla</li>
-         <li *ngIf="isAuthenticated">Ny artikel</li>
+         <li routerLinkActive="is-active" routerLink="/startsida">Startsida</li>
+         <li routerLinkActive="is-active" routerLink="/senaste">Senaste</li>
+         <li  routerLinkActive="is-active"routerLink="/alla">Alla</li>
+         <li  routerLinkActive="is-active" routerLink="/ny-artikel" *ngIf="isAuthenticated">Ny artikel</li>
      </ul>
         <button class="btn-login" (click)="getAuthenticated()">Logga in</button>
     
