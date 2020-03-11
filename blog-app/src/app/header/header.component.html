@@ -1,0 +1,11 @@
+
+ <div class="container">
+     <ul>
+         <li routerLinkActive="is-active" routerLink="/startsida">Startsida</li>
+         <li routerLinkActive="is-active" routerLink="/senaste">Senaste</li>
+         <li  routerLinkActive="is-active"routerLink="/alla">Alla</li>
+         <li  routerLinkActive="is-active" routerLink="/ny-artikel" *ngIf="isAuthenticated">Ny artikel</li>
+     </ul>
+        <button class="btn-login" (click)="getAuthenticated()">Logga in</button>
+    
+ </div>
