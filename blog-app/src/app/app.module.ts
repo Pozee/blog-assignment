@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { ArtikelServiceService } from "./artikel-service.service";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -26,7 +27,7 @@ import { NyArtikelComponent } from './ny-artikel/ny-artikel.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ArtikelServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

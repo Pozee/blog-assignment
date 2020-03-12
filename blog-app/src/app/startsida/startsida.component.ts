@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtikelServiceService } from '../artikel-service.service';
 
 @Component({
   selector: 'app-startsida',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./startsida.component.css']
 })
 export class StartsidaComponent implements OnInit {
-
-  constructor() { }
+artikel:any = [{}];
+  constructor(private  ArtikelService: ArtikelServiceService) { }
 
   ngOnInit(): void {
+    this.artikel = this.ArtikelService.getLatest()
   }
 
 }

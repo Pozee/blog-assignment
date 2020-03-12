@@ -1,7 +1,7 @@
 .container {
     display: flex;
     background-color: #333;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -21,10 +21,17 @@ div ul li:hover {
 }
 
 .btn-login {
-   margin-right: 2em;
+    margin-right: 1em;
    height: 1.5em;
    align-self: center;
 }
 .is-active {
     background-color: rgb(77, 77, 77)
+}
+.header-text {
+    display: inline;
+    color: white;
+}
+.right-container {
+   align-self: center;
 }

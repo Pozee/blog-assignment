@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtikelServiceService } from '../artikel-service.service';
 
 @Component({
   selector: 'app-senaste',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SenasteComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private  ArtikelService: ArtikelServiceService) { }
+  articles:any = [{}];
   ngOnInit(): void {
+    this.articles = this.ArtikelService.showLatestFive();
   }
 
 }
