@@ -59,6 +59,9 @@ return this.articleData[0];
 showLatestFive(){
   return this.articleData;
 }
+addArticle(data:any){
+this.articleData.unshift(data);
+}
 
   constructor() { }
 }
