@@ -1,0 +1,55 @@
+
+<div>
+    <form #blogForm="ngForm">
+        <div class="form-group">
+
+            <label>Titel</label>
+            <div>
+                <input type="text"
+                    required minlength="10" maxlength="20"
+                    [(ngModel)]="model.title" name="title"
+                    #title="ngModel"
+                />
+            </div>
+        
+        
+            <label>Inehåll</label>
+            <div>
+                <input type="text"
+                    required
+                    [(ngModel)]="model.content" name="content"
+                    #content="ngModel"
+                />
+            </div>
+        
+        
+            <label>Tid att läsa</label>
+            <div>
+                <input type="text"
+                    required
+                    [(ngModel)]="model.readtime" name="readtime"
+                    #readtime="ngModel"
+                />
+            </div>
+        
+        
+            <label>Författare</label>
+            <div>
+                <input type="text"
+                    required
+                    [(ngModel)]="model.author" name="author"
+                    #author="ngModel"
+                />
+            </div>
+        </div>
+        <button [disabled]="blogForm">Publicera artikel</button>
+        <button (click)="test()">test</button>
+    </form>
+
+		
+
+
+
+
+
+</div>
