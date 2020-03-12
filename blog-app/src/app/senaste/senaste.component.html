@@ -1,1 +1,19 @@
-<p>senaste works!</p>
+<h1>De fem senaste artiklarna</h1>
+<div class="main">
+<div class="article-container" *ngFor="let article of articles | slice:0:5;">
+    <h2 class="title"> {{article.title}}</h2>
+    <p class="content">{{article.content | slice:0:200}}...</p>
+    <div class="article-footer">
+      <div class="read-time">
+        <h3> Tid att läsa:</h3>
+        <p>{{article.readTime}} minuter.</p>
+      </div>
+      <div class="author-container">
+        <h4 class="author">Publicerad av:</h4>
+        <p class="author">{{article.author}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

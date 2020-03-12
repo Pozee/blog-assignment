@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule} from '@angular/forms';
+import { ArtikelServiceService } from "./artikel-service.service";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -28,7 +29,7 @@ import { NyArtikelComponent } from './ny-artikel/ny-artikel.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ArtikelServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

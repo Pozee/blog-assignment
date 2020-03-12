@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 isAuthenticated:boolean = false;
 getAuthenticated(){
-  this.isAuthenticated = true;
+  this.isAuthenticated = !this.isAuthenticated;
 };
 
 

@@ -6,6 +6,8 @@
          <li  routerLinkActive="is-active"routerLink="/alla">Alla</li>
          <li  routerLinkActive="is-active" routerLink="/ny-artikel" *ngIf="isAuthenticated">Ny artikel</li>
      </ul>
-        <button class="btn-login" (click)="getAuthenticated()">Logga in</button>
-    
+     <div class="right-container">
+        <p class="header-text">Är du bloggaren? </p>
+        <button class="btn-login" (click)="getAuthenticated()">{{isAuthenticated ? 'Logga ut' : 'Ja, jag är bloggaren'}}</button>
+     </div>
  </div>
