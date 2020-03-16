@@ -8,8 +8,9 @@ import { ArtikelServiceService } from '../artikel-service.service';
 })
 export class SenasteComponent implements OnInit {
 
-  constructor(private  ArtikelService: ArtikelServiceService) { }
-  articles:any = [{}];
+  constructor(private ArtikelService: ArtikelServiceService) { }
+  articles: any = [{}];
+
   ngOnInit(): void {
     this.articles = this.ArtikelService.showLatestFive();
   }
