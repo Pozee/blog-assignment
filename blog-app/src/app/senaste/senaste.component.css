@@ -17,7 +17,9 @@ h3,p,h4,h2{
     height: auto;
     min-width: 50em;
     max-width: 50em;
+    margin-top: 0;
 }
+
 .main {
     display: flex;
     flex-direction: column;

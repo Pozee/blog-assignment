@@ -12,6 +12,7 @@ import { StartsidaComponent } from './startsida/startsida.component';
 import { SenasteComponent } from './senaste/senaste.component';
 import { AllaComponent } from './alla/alla.component';
 import { NyArtikelComponent } from './ny-artikel/ny-artikel.component';
+import { LoggaInComponent } from './logga-in/logga-in.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NyArtikelComponent } from './ny-artikel/ny-artikel.component';
     StartsidaComponent,
     SenasteComponent,
     AllaComponent,
-    NyArtikelComponent
+    NyArtikelComponent,
+    LoggaInComponent
   ],
   imports: [
     BrowserModule,
