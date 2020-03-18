@@ -13,6 +13,7 @@ h1 {
     min-height: 2em;
     max-height: 5em;
     display: -webkit-inline-box;
+    
 }
 .main-container {
     display: flex;
