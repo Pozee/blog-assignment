@@ -3,11 +3,8 @@ export class Form {
     constructor(
         public title: string,
         public content: string,
-        public readTime: string,
+        public readtime: string,
         public author?: string
-
-    
-
         ){}
 }
 

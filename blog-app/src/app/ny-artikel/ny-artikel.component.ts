@@ -18,7 +18,7 @@ export class NyArtikelComponent implements OnInit {
   constructor(private  ArtikelService: ArtikelServiceService) { }
 
   ngOnInit(): void {
-      this.model = new Form("Mannen bakom corona utbrottet talar ut","Elon Musk Elon Musk", 20,"Pontus 'Z' Zetterberg");
+      this.model = new Form("","", "","");
       console.log(this.model.title)
   }
 
