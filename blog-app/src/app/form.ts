@@ -4,7 +4,7 @@ export class Form {
         public title: string,
         public content: string,
         public readTime: string,
-        public author: string
+        public author?: string
 
     
 
