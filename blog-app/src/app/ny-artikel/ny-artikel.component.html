@@ -1,31 +1,46 @@
 
-<div>
+<div class="container">
+
+    <div class="wrapper">
     <form #blogForm="ngForm">
         <div class="form-group">
 
             <label>Titel</label>
             <div>
-                <input type="text"
+                <input type="text" placeholder="Ex Mannen bakom corona"
                     required minlength="10" maxlength="20"
                     [(ngModel)]="model.title" name="title"
                     #title="ngModel"
+                
                 />
+                <div *ngIf="title.invalid && (title.dirty || title.touched)"
+                    class="alert">
+
+                    <div *ngIf="title.errors.required">
+                        Du behöver en titel!
+                      </div>
+                     
+
+                    <div *ngIf="title.errors.minlength">
+                         Måste vara minst 10 tecken lång!
+                     </div>
+                </div>
             </div>
         
         
             <label>Inehåll</label>
             <div>
-                <input type="text"
+                <textarea cols="20" rows="5"
                     required
                     [(ngModel)]="model.content" name="content"
                     #content="ngModel"
-                />
+                ></textarea>
             </div>
         
         
-            <label>Tid att läsa</label>
+            <label>Tid att läsa i minuter</label>
             <div>
-                <input type="text"
+                <input type="text" placeholder="Ex (20)"
                     required
                     [(ngModel)]="model.readtime" name="readtime"
                     #readtime="ngModel"
@@ -35,21 +50,17 @@
         
             <label>Författare</label>
             <div>
-                <input type="text"
-                    required
+                <input type="text" placeholder="Ex Pontus 'Z' Zetterberg"
+                    
                     [(ngModel)]="model.author" name="author"
                     #author="ngModel"
                 />
             </div>
         </div>
-        <button (click)="publishArticle()">Publicera artikel</button>
-        <button (click)="test()">test</button>
+        
+        
     </form>
 
-		
-
-    <!-- [disabled]="blogForm" -->
-
-
-
+    </div>
+    <button [disabled]="blogForm.invalid" (click)="publishArticle()">Publicera artikel</button>
 </div>
