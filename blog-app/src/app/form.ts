@@ -5,9 +5,6 @@ export class Form {
         public content: string,
         public readtime: string,
         public author?: string
-
-    
-
         ){}
 }
 
