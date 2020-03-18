@@ -6,11 +6,10 @@
         <li routerLinkActive="is-active" routerLink="/ny-artikel" *ngIf="isAuthenticated">Ny artikel</li>
     </ul>
     <div class="right-container">
-        <p class="header-text">Är du bloggaren? </p>
-        <button class="btn-login" routerLink="/logga-in">Ja, jag är bloggaren</button>
+        <p class="header-text" *ngIf="!isAuthenticated">Är du bloggaren? </p>
+        <button class="btn-login" *ngIf="isAuthenticated" routerLink="/startsida" (click)="logout()">Logga ut</button>
+        <button class="btn-login" *ngIf="!isAuthenticated" routerLink="/logga-in">Ja, jag är bloggaren</button> 
     </div>
 </div>
 
-
-
-<!-- <button class="btn-login" (click)="getAuthenticated()">{{isAuthenticated ? 'Logga ut' : 'Ja, jag är bloggaren'}}</button> -->
+<!-- <button class="btn-login" routerLink="/logga-in" (click)="checkLogout()">{{isAuthenticated == true ? "Logga ut" : "Ja, jag är bloggaren"}}</button> -->

@@ -8,7 +8,7 @@ export class ArtikelServiceService {
   articleData: any = [
     {
       title: "Trump botade corona",
-      content: `Efter veckor utav kaos ser vi äntligen juset i tunneln, idag klockan 09:15 presenterade vita huset att Donald Trump har tagit fram ett botemedel för corona.
+      content: `Efter veckor utav kaos ser vi äntligen ljuset i tunneln, idag klockan 09:15 presenterade vita huset att Donald Trump har tagit fram ett botemedel för corona.
       Dock vägrade han svara på hur han fått den kompetens som behövts utan nöjde sig med att säga "I got good genes, very good genes, the best genes".`,
       readTime: "40",
       author: "Barack Obama"
@@ -31,15 +31,15 @@ export class ArtikelServiceService {
       author: "Niklas Niklasson",
     },
     {
-      title: "Sex nya färger har upptäckts",
-      content: "Helt galet, folk är vilda.",
+      title: "Ny planet visade sig vara smuts",
+      content: "Ett par planetjägare som nyligen rapporterade att man hade upptäckt en ny planet tog idag tillbaka sitt uttalande. Efter en mer nogrann koll upptäckte man att det som man tidigare trott var en planet visade sig i detta fall vara smuts som satt sig på teleskopet. ",
       readTime: "5",
       author: "Niklas Niklasson",
 
     },
     {
-      title: "Sju nya färger har upptäckts",
-      content: "Helt galet, folk är vilda.",
+      title: "Toalettpapper sälj för hundratals kronor",
+      content: "Flera personer har blivit kontaktade utav en eller flera personer som försöker sälja taolettpapper för allt mellan 100:- till 500:-. Detta är helt orimligt då det flesta butiker har massor med papper på hyllorna eller på ingång.  ",
       readTime: "5",
       author: "Niklas Niklasson",
     }, {
